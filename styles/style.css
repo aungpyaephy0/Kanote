@@ -41,27 +41,221 @@ body {
     background-color: rgb(242, 249, 244);
 }
 
+.container .col .card {
+    border: none;
+}
+.card-body h5{
+    color: var(--primary);
+}
+
 
 /* Features ArtWork */
 .card-body p {
     color: #4D4D4D;
 }
-
 .card-body h4 {
     font-weight: 500;
     font-size: 16px;
     line-height: 90%;
     color: #0A020F;
 }
+/* post-activity */
+.g-col-6 .post-activity {
+    width: 556px;
+    height: 90px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: #F8F0FC;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+.g-col-6 .post-community {
+    width: 493px;
+    height: 68px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 140%;
+    color: #F8F0FC;
+    margin-top: 1rem;
+}
+.g-col-6 picture{
+    padding: 150px;
+}
+.arrow-btn {
+      gap: 10px;
+      background: #F8F0FC;
+      border-radius: 4px;
+      color: #5D0694;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      width: 130px;
+  }
 
-
-/* Artist */
+/* Artist Section*/
 .artist-section .row .col p{
     color: gray;
-    
 }
-
 .artist-section .col .img {
     width: 238px; 
     height: 208px;
 }
+
+
+/* Get-the-app-grid */
+.g-col-6 .get-app{
+    width: 340px;
+    height: 90px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 140%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.g-col-6 p {
+    color:rgba(101, 98, 110, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+/* current auction section */
+.current-auction .card-body .card-text p {
+    color:rgba(77, 77, 77, 1);
+}
+
+/* Upcoming Exhibation Section */
+.upcoming-exhibation .card-body h5 {
+    color: var(--primary);
+}
+
+/* Footer */
+.footer{
+    background-color: var(--primary);
+    padding: 60px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #08af96;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #ffffff;
+}
+footer .notice {
+    grid-column: 1/ 3;
+    color: white;
+    text-align: start;
+    margin: 30px 0px;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}  
+footer {
+    background-color: var(--primary);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+footer .container {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+.footer-category {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    padding: 0;
+    margin: 40px 0px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.footer-category-item {
+    margin: 0;
+    color: white;
+    display: inline;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(176, 255, 184);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+@media screen and (max-width: 620px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  }
