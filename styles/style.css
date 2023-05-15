@@ -141,7 +141,23 @@ body {
 .upcoming-exhibation .card-body h5 {
     color: var(--primary);
 }
+.auction-reamining-time span {
+    background-color: var(--primary);
+    float: right;
+    margin-top: -30px;
+    padding: 10px auto;
+}
+.auction-reamining-time p{
+    color: white;
+}
 
+.ads-container .ads {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(209, 13, 13);
+    transform: translate(-50%, -50%);
+  }
 /* Footer */
 .footer{
     background-color: var(--primary);
