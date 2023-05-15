@@ -102,18 +102,26 @@ body {
     width: 238px; 
     height: 208px;
 }
+/* .post-activity */
+.post-activity {
+    width: 1300px;
+    height: 480px;
+}
 
-
-/* Get-the-app-grid */
+/* Get-the-app-grid*/
+.get-the-app{
+    width: 1300px;
+    height: 408px;
+}
 .g-col-6 .get-app{
     width: 340px;
     height: 90px;
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
-    line-height: 140%;
-    margin-top: 5rem;
-    margin-left: 5rem;
+    line-height: 100%;
+    margin-top: 4rem;
+    margin-left: 4rem;
 }
 
 .g-col-6 p {
