@@ -37,22 +37,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Market</a>
+                            <a class="nav-link" href="Market.html">Market</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Artist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galleries</a>
+                            <a class="nav-link" href="galleries.html">Galleries</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Exhibition</a>
+                            <a class="nav-link" href="Auction.html">Auction</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -354,50 +354,9 @@
         </section>
         <!-- Popular section End -->
     </main>
-
-    <!-- Footer -->
-    <footer class="grid-container-3">
-        <div class="container">
-            <div>
-                <div class="footer-category">
-                    <img src="images/logo/logo2.png" alt=""><h3>KANOTE</h3>
-                </div>
-                <div class="footer-category-notes">
-                    <p style="color:white">All in one platform for both artiss </p>
-                    <p style="color:white">and artlover</p>
-                </div>
-            </div>
-            <div>
-                <p class="footer-category">For Partnership</p>
-                <div>
-                    <i class="fa-solid fa-envelope"></i> <a href=""
-                        class="footer-category-item hover-underline-animation">pr@teehtwin.org</a><br>
-                    <i class="fa-solid fa-phone"></i><a href=""
-                        class="footer-category-item hover-underline-animation">Gift Certificates</a><br>
-                </div>
-            </div>
-            <div>
-                <p class="footer-category">Customer Service</p>
-                <div>
-                    <i class="fa-solid fa-envelope"></i> <a href=""
-                        class="footer-category-item hover-underline-animation">customercare@teehtwin.org</a><br>
-                    <i class="fa-solid fa-phone"></i><a href=""
-                        class="footer-category-item hover-underline-animation">+1 916 462 1233</a><br>
-
-                </div>
-            </div>
-            <div>
-                <p class="footer-category">Get The App</p>
-                <div>
-                    <a href="" class="footer-category-item hover-underline-animation">Android App</a><br>
-                    <a href="tel:+8006001234" class="footer-category-item hover-underline-animation">IOS App</a><br>
-                </div>
-            </div>
-            <div class="notice">
-                <p>&copy; Copyright 2023, Tee Htwin Organzation</p>
-            </div>
-        </div>
-    </footer>
+    <?php 
+        include 'component/footer.html';
+    ?>
 </body>
 
 </html>
